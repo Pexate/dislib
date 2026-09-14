@@ -1,0 +1,11 @@
+{
+  "name": "crust-punk-recsys",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev"
+  }
+}

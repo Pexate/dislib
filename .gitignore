@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.uv/
+
+# Node
+node_modules/
+dist/
+.pnpm-store/
+
+# Data / secrets
+data/raw_metadata/*.json
+data/processed/*
+.env
+*.faiss
+*.index
+
+# OS
+.DS_Store

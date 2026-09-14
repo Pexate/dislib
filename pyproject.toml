@@ -1,0 +1,19 @@
+[project]
+name = "crust-punk-recsys"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[tool.uv.workspace]
+members = [
+    "services/scrapers",
+    "services/ml-pipeline",
+    "services/api",
+]
+
+[tool.uv.sources]
+scrapers = { workspace = true }
+ml-pipeline = { workspace = true }
+api = { workspace = true }
+
+[tool.uv.extra-build-dependencies]
+madmom = ["Cython", "numpy"]

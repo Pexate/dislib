@@ -1,0 +1,21 @@
+[project]
+name = "ml-pipeline"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Audio feature extraction, tag embeddings, similarity index, two-tower model"
+dependencies = [
+    "essentia>=2.1b6.dev1177",
+    "librosa>=0.10.2",
+    "madmom>=0.16.1",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyarrow>=17.0",
+    "scikit-learn>=1.5",
+    "umap-learn>=0.5.6",
+    "faiss-cpu>=1.8",
+    "torch>=2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
