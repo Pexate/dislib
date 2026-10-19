@@ -26,7 +26,7 @@ crust-punk-recsys/
 │       ├── pyproject.toml
 │       └── src/api/main.py
 ├── apps/
-│   └── web/                      # React app: essentia.js client-side extraction, UMAP/D3 similarity map
+│   └── web/                      # Svelte app: essentia.js client-side extraction, UMAP/D3 similarity map
 │       ├── package.json
 │       └── src/extractFeatures.js
 └── data/
@@ -91,14 +91,14 @@ uv run --package scrapers python services/scrapers/src/scrapers/fetch_all.py "Am
 uv run --package api uvicorn api.main:app --reload --app-dir services/api/src
 ```
 
-### 2. Web app (React + essentia.js)
+### 2. Web app (Svelte + essentia.js)
 
 ```bash
 pnpm install
 pnpm dev:web
 ```
 
-This installs `apps/web`'s dependencies (React, essentia.js, Meyda,
+This installs `apps/web`'s dependencies (Svelte, essentia.js, Meyda,
 D3, Plotly) and starts the Vite dev server.
 
 ### 3. Environment variables (API credentials)
