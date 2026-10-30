@@ -19,3 +19,4 @@ data/processed/*
 
 # OS
 .DS_Store
+raw_metadata/

@@ -1997,6 +1997,7 @@ source = { editable = "services/scrapers" }
 dependencies = [
     { name = "musicbrainzngs" },
     { name = "pylast" },
+    { name = "python-dotenv" },
     { name = "python3-discogs-client" },
 ]
 
@@ -2004,6 +2005,7 @@ dependencies = [
 requires-dist = [
     { name = "musicbrainzngs", specifier = ">=0.7.1" },
     { name = "pylast", specifier = ">=5.3.0" },
+    { name = "python-dotenv", specifier = ">=1.2.3" },
     { name = "python3-discogs-client", specifier = ">=2.7" },
 ]
 
