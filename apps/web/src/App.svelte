@@ -1,1 +1,5 @@
-<h1>Dislib</h1>
+<script>
+    import Navbar from "./lib/components/Navbar.svelte";
+</script>
+
+<Navbar />

@@ -15,5 +15,5 @@
     "noEmit": true,
     "types": ["svelte"]
   },
-  "include": ["src"]
+  "include": ["src", "src/lib/components/Navbar.svelte"]
 }
