@@ -3,3 +3,31 @@
 @theme {
   --spacing: 60px;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light palette */
+:root {
+  --page: white;
+  --content: black;
+  --border: black;
+}
+
+/* Dark palette */
+.dark {
+  color-scheme: dark;
+  --page: black;
+  --content: white;
+  --border: white;
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-content: var(--content);
+  --color-border: var(--border);
+}
+
+body {
+  background-color: var(--page);
+  color: var(--content);
+}
